@@ -14,9 +14,8 @@ export function Education() {
       period: "2022 - 2025",
       description: "Graduated with Good Honors",
       highlights: [
-        "Specialized in Artificial Intelligence and Machine Learning",
-        "Research project on Deep Learning for Image Recognition",
-        "President of AI & Data Science Club",
+        "Specialized in Software Engineering: Software Architecture",
+        "President | AI Instructor | Head of HR Department at Microsoft ISSATSo Club",
       ],
     },
     {
@@ -25,29 +24,42 @@ export function Education() {
       period: "2020 - 2022",
       description: "Graduated with Good Honors",
       highlights: [
-        "Specialized in Artificial Intelligence and Machine Learning",
-        "Research project on Deep Learning for Image Recognition",
-        "President of AI & Data Science Club",
+        "Specialized in Mathematics, Physics and Computer Science",
       ],
     }
   ];
 
   const certifications = [
     {
-      title: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
+      title: "TensorFlow Developer Certificate",
+      issuer: "Google",
       year: "2024",
     },
     {
-      title: "Deep Learning Specialization",
-      issuer: "Coursera - DeepLearning.AI",
+      title: "Applications for Predictive Maintenance, Deep Learning & Building Transformer-based NLP",
+      issuer: "Nvidia DLI",
       year: "2024",
     },
     {
-      title: "Professional Scrum Master I",
-      issuer: "Scrum.org",
-      year: "2024",
+      title: "Machine Learning Foundations",
+      issuer: "AWS Academy",
+      year: "2023",
     },
+    {
+      title: "Microsoft Learn AI Skills Challenge",
+      issuer: "Microsoft Learn",
+      year: "2023",
+    },
+    {
+      title: "Tensorflow Developer Professional Certificate",
+      issuer: "DeepLearning.AI",
+      year: "2023",
+    },
+    {
+      title: "Machine Learning Specialization",
+      issuer: "Coursera",
+      year: "2023",
+    }
   ];
 
   return (

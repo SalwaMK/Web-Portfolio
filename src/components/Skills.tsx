@@ -54,6 +54,10 @@ export function Skills() {
     { name: "TensorFlow", icon: Database },
     { name: "Scikit-learn", icon: TrendingUp },
     { name: "Jupyter", icon: Code },
+    { name: "Git/ Github", icon: Users },
+    { name: "SQL/ PLSQL", icon: BarChart3 },
+    { name: "Linux", icon: Brain },
+    { name: "Flask", icon: Code },
   ];
 
   return (
@@ -96,25 +100,28 @@ export function Skills() {
               </div>
 
               <div className="space-y-4">
-                {category.skills.map((skill) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-slate-700">{skill.name}</span>
-                      <span className="text-purple-600">{skill.level}%</span>
-                    </div>
-                    <div className="h-2 bg-purple-100 rounded-full overflow-hidden relative">
+                {category.skills.map((skill, skillIndex) => (
+                  <div key={skill.name} className="mb-3">
+                    <div className="relative h-12 rounded-xl overflow-hidden">
+                      <div className="absolute inset-0 bg-purple-100" />
+
                       <motion.div
                         initial={{ width: 0 }}
                         animate={isInView ? { width: `${skill.level}%` } : { width: 0 }}
-                        transition={{ duration: 1.2, delay: 0.5 + 0.1 * index, ease: "easeOut" }}
-                        className="h-full bg-gradient-to-r from-purple-500 via-purple-400 to-pink-500 rounded-full relative overflow-hidden"
+                        transition={{ duration: 1.2, delay: 0.3 + 0.04 * skillIndex, ease: "easeOut" }}
+                        className="absolute left-0 top-0 bottom-0 bg-gradient-to-r from-purple-600 to-pink-600 shadow-lg"
                       >
                         <motion.div
-                          animate={{ x: [-100, 200] }}
+                          aria-hidden
+                          animate={{ x: [-120, 240] }}
                           transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-                          className="absolute inset-0 w-20 bg-gradient-to-r from-transparent via-white/40 to-transparent"
+                          className="absolute inset-0 w-28 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-60"
                         />
                       </motion.div>
+
+                      <div className="relative z-10 flex items-center h-full px-4">
+                        <span className="text-slate-800 font-medium drop-shadow-sm">{skill.name}</span>
+                      </div>
                     </div>
                   </div>
                 ))}

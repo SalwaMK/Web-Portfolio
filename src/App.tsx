@@ -3,6 +3,8 @@ import { About } from "./components/About";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Education } from "./components/Education";
+import { Blogs } from "./components/Blogs";
+import { Events } from "./components/Events";
 import { Contact } from "./components/Contact";
 import { Navigation } from "./components/Navigation";
 import { BackgroundEffects } from "./components/BackgroundEffects";
@@ -19,6 +21,8 @@ export default function App() {
           <Skills />
           <Projects />
           <Education />
+          <Blogs />
+          <Events />
           <Contact />
         </main>
         <footer className="bg-white/50 backdrop-blur-sm py-8 mt-20 border-t border-purple-100/50">
