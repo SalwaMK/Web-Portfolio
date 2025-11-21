@@ -15,18 +15,20 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full mb-4"
+            className="text-4xl inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full mb-4 font-semibold tracking-wide"
           >
-            Software Engineer
+            SOFTWARE ENGINEER
           </motion.div>
-          
-          <h1 className="mb-4 text-slate-800">
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">Salwa Mekni</span>
+
+          <h1 className="mb-4 text-slate-800 font-extrabold text-4xl md:text-6xl leading-tight">
+            Hi, I'm
+            <div className="mt-2">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 block font-extrabold text-5xl md:text-7xl">Salwa Mekni</span>
+            </div>
           </h1>
-          
-          <p className="text-slate-600 mb-8 max-w-lg">
-            A software engineer specializing passionate about AI, data science, and project management. 
-            I build intelligent solutions that make a difference.
+
+          <p className="text-slate-600 mb-8 max-w-lg text-lg">
+            A software engineer passionate about AI, data science, and project management. I build intelligent solutions that make a difference.
           </p>
 
           <motion.div

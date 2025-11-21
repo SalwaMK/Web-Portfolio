@@ -25,7 +25,9 @@ export function Navigation() {
   const navItems = [
     { label: "About", id: "about" },
     { label: "Skills", id: "skills" },
+    { label: "Blogs", id: "blogs" },
     { label: "Projects", id: "projects" },
+    { label: "Events", id: "events" },
     { label: "Education", id: "education" },
     { label: "Contact", id: "contact" },
   ];
@@ -34,18 +36,18 @@ export function Navigation() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-sm ${
+        isScrolled ? "bg-white/80 shadow-sm" : "bg-white/10"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <motion.button
             onClick={() => scrollToSection("hero")}
-            className="text-purple-600"
+            className="text-purple-600 font-bold"
             whileHover={{ scale: 1.05 }}
           >
-            AC
+            SM
           </motion.button>
 
           {/* Desktop Navigation */}

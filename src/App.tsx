@@ -8,6 +8,7 @@ import { Events } from "./components/Events";
 import { Contact } from "./components/Contact";
 import { Navigation } from "./components/Navigation";
 import { BackgroundEffects } from "./components/BackgroundEffects";
+import { EventPhotos } from "./components/EventPhotos";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Education />
           <Blogs />
           <Events />
+          <EventPhotos/>
           <Contact />
         </main>
         <footer className="bg-white/50 backdrop-blur-sm py-8 mt-20 border-t border-purple-100/50">
