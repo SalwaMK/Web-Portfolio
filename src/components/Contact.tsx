@@ -28,8 +28,8 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "salwamekni8@email.com",
-      href: "mailto:salwamekni8@email.com",
+      value: "salwamekni8@gmail.com",
+      href: "mailto:salwamekni8@gmail.com",
     },
     /*{
       icon: Phone,
