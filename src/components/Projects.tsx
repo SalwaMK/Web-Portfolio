@@ -13,7 +13,7 @@ export function Projects() {
     {
       title: "Smart Stadium Dashboard",
       description: "Interactive dashboard for real-time stadium management and data visualization, built with React and modern web technologies.",
-      image: "/assets/stade.jpg",
+      image: "/images/stade.jpg",
       tags: ["ReactJs", "CSS", "vite"],
       github: "https://github.com/SalwaMK/SmartStadiumDashboard",
       demo: "https://example.com",
@@ -21,7 +21,7 @@ export function Projects() {
     {
       title: "Football Prediction System",
       description: "ML model predicting football match outcomes using statistical analysis and historical data with Scikit-learn and PostgreSQL.",
-      image: "/assets/pred.jpg",
+      image: "/images/pred.jpg",
       tags: ["Python", "Flask", "Streamlit", "PostgreSQL", "Scikit-learn"],
       github: "https://github.com/SalwaMK/FootballPredictionSystem",
       demo: "https://example.com",
@@ -29,7 +29,7 @@ export function Projects() {
     {
       title: "Football Recommendation Engine",
       description: "Personalized recommendation system suggesting football players and teams based on collaborative filtering and ML algorithms.",
-      image: "/assets/rec.jpg",
+      image: "/images/rec.jpg",
       tags: ["Python", "Flask", "Streamlit", "PostgreSQL"],
       github: "https://github.com/SalwaMK/FootballRecommendationSystem",
       demo: "https://example.com",
@@ -37,28 +37,28 @@ export function Projects() {
     {
       title: "Lung Care AI",
       description: "Deep learning model for lung disease detection and diagnosis using CNN and TensorFlow medical imaging analysis.",
-      image: "/assets/lungs.jpg",
+      image: "/images/lungs.jpg",
       tags: ["Python", "TensorFlow", "Scikit-learn"],
       github: "https://github.com/SalwaMK/LungCareAI",
     },
     {
       title: "Resume Recommendation System",
       description: "Intelligent system matching resumes to job opportunities using NLP and similarity analysis for recruitment optimization.",
-      image: "/assets/interview.jpg",
+      image: "/images/interview.jpg",
       tags: ["Python", "TensorFlow", "Flask", "Streamlit"],
       github: "ttps://github.com/SalwaMK/Resume-Rec-System",
     },
     {
       title: "Chatbot Multilingual Interactive",
       description: "Conversational AI chatbot supporting multiple languages using Google APIs and NLP for seamless user interactions.",
-      image: "/assets/chatbot.jpg",
+      image: "/images/chatbot.jpg",
       tags: ["Python", "Google", "Flask", "Streamlit"],
       github: "https://github.com/SalwaMK/Chatbot-Multilingual-Interactive",
     },
     {
       title: "Mapping Olive Crops",
       description: "Satellite imagery analysis and machine learning for precision agriculture, mapping and monitoring olive crop health.",
-      image: "/assets/olive.png",
+      image: "/images/olive.png",
       tags: ["Python", "Scikit-lear", "TensorFlow", "Streamlit", "Google Colab"],
       github: "https://github.com/SalwaMK/Mapping-Olive-Crops",
       demo: "https://example.com",
@@ -66,23 +66,23 @@ export function Projects() {
     {
       title: "Plastic vs Jellyfish Classification",
       description: "Computer vision CNN model distinguishing between plastic pollution and jellyfish in ocean imagery for environmental monitoring.",
-      image: "/assets/turtle.jpg",
+      image: "/images/turtle.jpg",
       tags: ["Python", "Scikit-lear", "TensorFlow", "Streamlit", "Google Colab"],
       github: "https://github.com/SalwaMK/Plastic-vs-Jellyfish-Classficiation",
     },
     {
       title: "Car Lease Platfrom",
       description: "Full-stack web application for car leasing management with booking, payment processing, and fleet inventory tracking.",
-      image: "/assets/car.jpg",
+      image: "/images/car.jpg",
       tags: ["Reactjs", "PHP", "MySQL"],
-      github: "ttps://github.com/SalwaMK/Car-Lease",
+      github: "https://github.com/SalwaMK/Car-Lease",
     },
     {
       title: "Bank Client Creditworthiness Prediction System",
       description: "ML predictive model assessing credit risk and client creditworthiness using financial data analysis and classification.",
-      image: "/assets/bank.jpg",
+      image: "/images/bank.jpg",
       tags: ["Python", "Google", "Flask", "Streamlit"],
-      github: "ttps://github.com/SalwaMK/AI-Night-Challenge",
+      github: "https://github.com/SalwaMK/AI-Night-Challenge",
     },
     
   ];

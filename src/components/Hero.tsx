@@ -48,7 +48,7 @@ export function Hero() {
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button asChild variant="outline" className="border-purple-200 hover:bg-purple-50 shadow-sm hover:shadow-md transition-all">
-                <a href="/assets/Salwa-Makni-CV-EN.pdf" download>
+                <a href="/images/Salwa-Makni-CV-EN.pdf" download>
                   <Download className="mr-2" size={18} />
                   Download CV
                 </a>
@@ -116,7 +116,7 @@ export function Hero() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-pink-400/20" />
               <img
-                src="../assets/salwa1.jpg"
+                src="../images/salwa1.jpg"
                 alt="salwa"
                 className="w-full h-full object-cover relative z-10"
               />
