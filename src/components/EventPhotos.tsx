@@ -11,7 +11,7 @@ export function EventPhotos() {
 
   const photos = eventPhotos.map((photo) => ({
     ...photo,
-    src: new URL(`../../images/${photo.path}`, import.meta.url).href,
+    src: new URL(`../../assets/${photo.path}`, import.meta.url).href,
     date: photo.date ?? "",
   }));
 
