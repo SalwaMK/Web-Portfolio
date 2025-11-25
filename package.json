@@ -56,8 +56,8 @@
             "vite": "6.3.5"
       },
       "scripts": {
-            "dev": "vite",
-            "build": "vite build"
+            "build": "vite build",
+            "deploy": "gh-pages -d build"
       },
       "description": "This is a code bundle for Web Portfolio for Graduate. The original project is available at https://www.figma.com/design/3NmmTSJhuxAEAJMYqZc2so/Web-Portfolio-for-Graduate.",
       "main": "index.js",
