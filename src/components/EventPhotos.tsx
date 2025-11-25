@@ -47,7 +47,7 @@ export function EventPhotos() {
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     // show a simple placeholder when image not found
-                    (e.target as HTMLImageElement).src = "/assets/salwa1.jpg";
+                    (e.target as HTMLImageElement).src = new URL('../../assets/salwa1.jpg', import.meta.url).href;
                   }}
                 />
               </div>

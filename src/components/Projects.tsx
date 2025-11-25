@@ -118,7 +118,7 @@ export function Projects() {
               <Card className="overflow-hidden bg-white/70 backdrop-blur-sm border-purple-100 hover:shadow-2xl hover:border-purple-300 transition-all h-full group">
                 <div className="aspect-video overflow-hidden relative">
                   <motion.img
-                    src={project.image}
+                    src={new URL(`../../assets/${project.image.split('/').pop()}`, import.meta.url).href}
                     alt={project.title}
                     className="w-full h-full object-cover"
                     whileHover={{ scale: 1.1 }}
