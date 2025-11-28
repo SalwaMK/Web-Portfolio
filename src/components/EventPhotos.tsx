@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
@@ -8,6 +8,8 @@ import { eventPhotos } from "../data/eventPhotos";
 export function EventPhotos() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const [failed, setFailed] = useState<Set<string>>(new Set());
 
   const photos = eventPhotos.map((photo) => ({
     ...photo,
@@ -31,23 +33,28 @@ export function EventPhotos() {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(0,1fr)]">
-          {photos.map((p) => (
+          {photos
+            .filter((p) => !failed.has(p.path))
+            .map((p) => (
             <motion.figure
-              key={p.src}
+              key={p.path}
               className="flex flex-col bg-white/70 backdrop-blur-sm rounded-xl overflow-hidden shadow-sm h-full"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6 }}
             >
               <div className="relative w-full bg-gray-100 aspect-square">
-                {/* If the image file is missing, the img will fail — replace src with real files in /assets/events/ */}
                 <img
                   src={p.src}
                   alt={p.caption}
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    // show a simple placeholder when image not found
-                    (e.target as HTMLImageElement).src = new URL('../../assets/salwa1.jpg', import.meta.url).href;
+                  onError={() => {
+                    // mark this photo as failed to prevent showing a generic placeholder
+                    setFailed((prev) => {
+                      const next = new Set(prev);
+                      next.add(p.path);
+                      return next;
+                    });
                   }}
                 />
               </div>
