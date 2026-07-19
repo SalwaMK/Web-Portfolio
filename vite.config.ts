@@ -4,7 +4,8 @@
   import path from 'path';
 
   export default defineConfig({
-    base: '/Web-Portfolio/',
+    // GitHub Pages serves this repository from a subpath; Vercel serves from the domain root.
+    base: process.env.VERCEL ? '/' : '/Web-Portfolio/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
