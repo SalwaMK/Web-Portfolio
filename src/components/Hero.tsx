@@ -27,8 +27,8 @@ export function Hero() {
             </span>
           </h1>
 
-        
-          
+
+
           <p className="text-slate-600 mb-8 max-w-lg text-base sm:text-lg">
             A software engineer passionate about AI, data science, and product-focused engineering.
             I build intelligent, user-centered solutions that make a measurable difference.
@@ -48,7 +48,7 @@ export function Hero() {
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button asChild variant="outline" className="border-purple-200 hover:bg-purple-50 shadow-sm hover:shadow-md transition-all">
-                <a href={new URL('../../assets/Salwa-Makni-CV-EN.pdf', import.meta.url).href} download>
+                <a href={new URL('../../assets/Salwa_Makni_CV.pdf', import.meta.url).href} download>
                   <Download className="mr-2" size={18} />
                   Download CV
                 </a>
@@ -98,17 +98,17 @@ export function Hero() {
               transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
               className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 rounded-full blur-3xl opacity-30"
             />
-            
+
             {/* Pulsing outer ring */}
             <motion.div
-              animate={{ 
+              animate={{
                 scale: [1, 1.05, 1],
                 opacity: [0.4, 0.6, 0.4],
               }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
               className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 rounded-3xl blur-2xl opacity-40"
             />
-            
+
             <motion.div
               whileHover={{ scale: 1.02, y: -5 }}
               transition={{ duration: 0.3 }}
@@ -131,7 +131,7 @@ export function Hero() {
               className="absolute -top-4 -right-4 bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-4 border border-purple-200"
             >
               <motion.div
-                animate={{ 
+                animate={{
                   rotate: [0, 10, 0, -10, 0],
                   y: [0, -5, 0],
                 }}
@@ -149,7 +149,7 @@ export function Hero() {
               className="absolute -bottom-4 -left-4 bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-4 border border-pink-200"
             >
               <motion.div
-                animate={{ 
+                animate={{
                   rotate: [0, -10, 0, 10, 0],
                   y: [0, 5, 0],
                 }}
